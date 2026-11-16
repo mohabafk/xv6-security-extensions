@@ -53,7 +53,7 @@ The audit log uses a fixed-size in-memory buffer, so older
 entries can be overwritten and records do not persist across reboot.
 
 ## Project Report
-The project report will be uploaded to this repository.
+[Download the project report](https://github.com/mohabafk/xv6-security-extensions/raw/refs/heads/main/xv6-security-report.docx)
 
 ## Author
 Mohab Amr Elmansoury
