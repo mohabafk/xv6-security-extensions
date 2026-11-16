@@ -4,10 +4,11 @@ An academic operating systems security project documenting
 user authentication, file access control, and syscall auditing in xv6.
 
 ## Repository Contents
-This repository contains the project report, code excerpts,
-and screenshots. The complete modified xv6 source code
-is not currently included.
+This repository contains the xv6 security source code in [src/](src/),
+along with an academic project report.
 
+The report describes an earlier version. Some implementation details
+differ from the included source code.
 ## Security Features Documented
 
 ### User Authentication
@@ -45,15 +46,24 @@ is not currently included.
 ## Limitations
 This is an educational prototype, not a production security system.
 
-The report uses FNV-1a for password hashing. FNV-1a is not a
-password-security algorithm and would need replacement with
-a suitable password-hashing scheme in a real system.
+The source code uses a simple non-cryptographic password hash.
+It is unsuitable for protecting real passwords.
 
 The audit log uses a fixed-size in-memory buffer, so older
 entries can be overwritten and records do not persist across reboot.
 
 ## Project Report
 [Download the project report](https://github.com/mohabafk/xv6-security-extensions/raw/refs/heads/main/xv6-security-report.docx)
+
+## Source Code and Credits
+Browse the implementation in [src/](src/).
+
+Based on MIT's x86 xv6-public teaching operating system.
+The original license is preserved in [src/LICENSE](src/LICENSE).
+
+## Verification Status
+Build and runtime verification of this published source copy
+are pending.
 
 ## Author
 Mohab Amr Elmansoury
